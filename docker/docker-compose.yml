@@ -82,9 +82,3 @@ services:
       - 127.0.0.1:5601:5601
     environment:
       - ELASTICSEARCH_URL=http://elasticsearch:9200        
-     depends_on:
-       - elasticsearch
-       - angular_nginx
-     links:
-       - elasticsearch
-       - angular_nginx
