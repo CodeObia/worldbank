@@ -29,7 +29,7 @@
             "type": "Dspace",
             "name": "worldbank",
             "startPage": 0,
-            "allCores": true,
+            "allCores": false,
             "itemsEndPoint": "https://openknowledge.worldbank.org/rest/items?expand=metadata,bitstreams,parentCommunityList",
             "schema": {
                 "id": "id",
