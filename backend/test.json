@@ -1,0 +1,33 @@
+{
+    "statusCode": 500,
+    "body": "<!doctype html><html lang=\"en\"><head><title>HTTP Status 500 – Internal Server Error</title><style type=\"text/css\">H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A {color : black;}A.name {color : black;}HR {color : #525D76;}</style></head><body><h1>HTTP Status 500 – Internal Server Error</h1><hr class=\"line\" /><p><b>Type</b> Exception Report</p><p><b>Message</b> Servlet execution threw an exception</p><p><b>Description</b> The server encountered an unexpected condition that prevented it from fulfilling the request.</p><p><b>Exception</b> <pre>javax.servlet.ServletException: Servlet execution threw an exception\n\torg.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)\n</pre></p><p><b>Root Cause</b> <pre>java.lang.NoSuchMethodError: org.dspace.rest.Resource.getServletContextPath()Ljava/lang/String;\n\torg.dspace.rest.common.DSpaceObject.getLink(DSpaceObject.java:76)\n\tsun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tsun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)\n\tsun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tjava.lang.reflect.Method.invoke(Method.java:606)\n\tcom.fasterxml.jackson.databind.ser.BeanPropertyWriter.get(BeanPropertyWriter.java:653)\n\tcom.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:509)\n\tcom.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:551)\n\tcom.fasterxml.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:143)\n\tcom.fasterxml.jackson.databind.ser.std.ObjectArraySerializer.serializeContents(ObjectArraySerializer.java:226)\n\tcom.fasterxml.jackson.databind.ser.std.ObjectArraySerializer.serializeContents(ObjectArraySerializer.java:25)\n\tcom.fasterxml.jackson.databind.ser.std.ArraySerializerBase.serialize(ArraySerializerBase.java:57)\n\tcom.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:120)\n\tcom.fasterxml.jackson.databind.ObjectWriter.writeValue(ObjectWriter.java:457)\n\tcom.fasterxml.jackson.jaxrs.json.JacksonJsonProvider.writeTo(JacksonJsonProvider.java:583)\n\tcom.sun.jersey.spi.container.ContainerResponse.write(ContainerResponse.java:306)\n\tcom.sun.jersey.server.impl.application.WebApplicationImpl._handleRequest(WebApplicationImpl.java:1479)\n\tcom.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1391)\n\tcom.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1381)\n\tcom.sun.jersey.spi.container.servlet.WebComponent.service(WebComponent.java:416)\n\tcom.sun.jersey.spi.container.servlet.ServletContainer.service(ServletContainer.java:538)\n\tcom.sun.jersey.spi.container.servlet.ServletContainer.service(ServletContainer.java:716)\n\tjavax.servlet.http.HttpServlet.service(HttpServlet.java:731)\n\torg.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)\n</pre></p><p><b>Note</b> The full stack trace of the root cause is available in the server logs.</p><hr class=\"line\" /><h3>Apache Tomcat/7.0.94</h3></body></html>",
+    "headers": {
+        "date": "Wed, 04 Sep 2019 12:17:45 GMT",
+        "server": "Apache-Coyote/1.1",
+        "x-frame-options": "DENY",
+        "strict-transport-security": "max-age=15768000",
+        "content-type": "text/html;charset=utf-8",
+        "content-language": "en",
+        "content-length": "3580",
+        "x-ua-compatible": "IE=Edge,chrome=1",
+        "connection": "close"
+    },
+    "request": {
+        "uri": {
+            "protocol": "https:",
+            "slashes": true,
+            "auth": null,
+            "host": "openknowledge.worldbank.org",
+            "port": 443,
+            "hostname": "openknowledge.worldbank.org",
+            "hash": null,
+            "search": "?expand=metadata,bitstreams,parentCommunityList&limit=50&offset=0",
+            "query": "expand=metadata,bitstreams,parentCommunityList&limit=50&offset=0",
+            "pathname": "/rest/items",
+            "path": "/rest/items?expand=metadata,bitstreams,parentCommunityList&limit=50&offset=0",
+            "href": "https://openknowledge.worldbank.org/rest/items?expand=metadata,bitstreams,parentCommunityList&limit=50&offset=0"
+        },
+        "method": "GET",
+        "headers": {}
+    }
+}
