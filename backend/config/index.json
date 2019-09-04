@@ -1,8 +1,4 @@
 {
-
-
-
-
     "temp_index": "items-temp",
     "final_index": "items-final",
     "index_type": "item",
@@ -35,6 +31,63 @@
                 "id": "id",
                 "handle": "handle",
                 "metadata": [
+                    
+                    {
+                        "where": {
+                            "key": "okr.unit"
+                        },
+                        "value": {
+                            "value": "unit"
+                        }
+                    },
+                    {
+                        "where": {
+                            "key": "okr.globalpractice"
+                        },
+                        "value": {
+                            "value": "globalpractice"
+                        }
+                    },
+                    {
+                        "where": {
+                            "key": "okr.imported"
+                        },
+                        "value": {
+                            "value": "imported"
+                        }
+                    },
+                    {
+                        "where": {
+                            "key": "okr.googlescholar.linkpresent"
+                        },
+                        "value": {
+                            "value": "googlescholar"
+                        }
+                    },
+                    {
+                        "where": {
+                            "key": "dc.rights"
+                        },
+                        "value": {
+                            "value": "rights"
+                        }
+                    },
+                    {
+                        "where": {
+                            "key": "okr.doctype"
+                        },
+                        "value": {
+                            "value": "doctype"
+                        }
+                    },
+                    {
+                        "where": {
+                            "key": "okr.topic"
+                        },
+                        "value": {
+                            "value": "topic"
+                        }
+                    },
                     {
                         "where": {
                             "key": "dc.date.issued"
@@ -86,7 +139,25 @@
                     },
                     {
                         "where": {
+                            "key": "dc.language"
+                        },
+                        "value": {
+                            "value": "language"
+                        },
+                        "addOn": "language"
+                    },
+                    {
+                        "where": {
                             "key": "dc.language.iso"
+                        },
+                        "value": {
+                            "value": "language"
+                        },
+                        "addOn": "language"
+                    },
+                    {
+                        "where": {
+                            "key": "okr.language.supported"
                         },
                         "value": {
                             "value": "language"
@@ -245,6 +316,15 @@
                             "value": "crp"
                         }
                     },
+                    
+                    {
+                        "where": {
+                            "key": "dc.contributor.other"
+                        },
+                        "value": {
+                            "value": "author"
+                        }
+                    },
                     {
                         "where": {
                             "key": "dc.contributor.author"
@@ -255,7 +335,7 @@
                     },
                     {
                         "where": {
-                            "key": "dc.contributor"
+                            "key": "dc.contributor.editor"
                         },
                         "value": {
                             "value": "author"
@@ -279,5 +359,4 @@
             }
         }
     ]
-
 }
