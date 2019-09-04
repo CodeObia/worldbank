@@ -122,7 +122,15 @@
                     },
                     {
                         "where": {
-                            "key": "cg.coverage.region"
+                            "key": "okr.region.geographical"
+                        },
+                        "value": {
+                            "value": "region"
+                        }
+                    },
+                    {
+                        "where": {
+                            "key": "okr.region.administrative"
                         },
                         "value": {
                             "value": "region"

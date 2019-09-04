@@ -22,36 +22,6 @@ export const countersConfig: GeneralConfigs[] = [
   {
     show: true,
     componentConfigs: {
-      id: 'openAccess',
-      title: 'Open Access',
-      source: 'status.keyword',
-      filter: 'Open Access',
-      description: `
-        Total number of information products freely
-        accessible and usable as by license applied.
-      `,
-      percentageFromTotal: true,
-    } as ComponentCounterConfigs,
-    tour: true,
-  },
-  {
-    show: true,
-    componentConfigs: {
-      id: 'limitedAcess',
-      title: 'Limited Access',
-      source: 'status.keyword',
-      filter: 'Limited Access',
-      description: `
-        Total number of information products only
-        accesible as by publisher's specifications.
-      `,
-      percentageFromTotal: true,
-    } as ComponentCounterConfigs,
-    tour: true,
-  },
-  {
-    show: true,
-    componentConfigs: {
       id: 'languages',
       title: 'Languages',
       source: 'language.keyword',
@@ -69,7 +39,7 @@ export const countersConfig: GeneralConfigs[] = [
       title: 'Authors',
       source: 'author.keyword',
       description: `
-        Total number of Authors involved with he information
+        Total number of Authors involved with the information
         product found
       `,
     } as ComponentCounterConfigs,
@@ -78,24 +48,11 @@ export const countersConfig: GeneralConfigs[] = [
   {
     show: true,
     componentConfigs: {
-      id: 'authorsAffiliations',
-      title: 'Authors Affiliations',
-      source: 'affiliation.keyword',
+      id: 'subjectcount',
+      title: 'Subjects',
+      source: 'subject.keyword',
       description: `
-        Total number of information products only accessible
-        as by Subject's specifications.
-      `,
-    } as ComponentCounterConfigs,
-    tour: true,
-  },
-  {
-    show: true,
-    componentConfigs: {
-      id: 'CRPs&Platforms',
-      title: 'CRPs & Platforms',
-      source: 'crp.keyword',
-      description: `
-        Total number of Authors involved with he information
+        Total number of Subjects involved with the information
         product found
       `,
     } as ComponentCounterConfigs,
@@ -104,14 +61,41 @@ export const countersConfig: GeneralConfigs[] = [
   {
     show: true,
     componentConfigs: {
-      id: 'countries',
-      title: 'Countries',
-      source: 'country.keyword',
+      id: 'topiccounts',
+      title: 'Topics',
+      source: 'topic.keyword',
       description: `
-        Total number of information products only accessible
-        as by rights specifications.
+        Total number of Topics involved with the information
+        product found
       `,
     } as ComponentCounterConfigs,
     tour: true,
   },
+  {
+    show: true,
+    componentConfigs: {
+      id: 'regionscounts',
+      title: 'Regions',
+      source: 'region.keyword',
+      description: `
+        Total number of Regions involved with the information
+        product found
+      `,
+    } as ComponentCounterConfigs,
+    tour: true,
+  }
+  ,
+  {
+    show: true,
+    componentConfigs: {
+      id: 'regionscounts',
+      title: 'Regions',
+      source: 'region.keyword',
+      description: `
+        Total number of Regions involved with the information
+        product found
+      `,
+    } as ComponentCounterConfigs,
+    tour: true,
+  }
 ];
