@@ -13,6 +13,7 @@ import * as _ from 'underscore'
 const ISO = require('iso-3166-1')
 const langISO = require('iso-639-1')
 let moment = require('moment')
+var xml2js = require('xml2js');
 export class common implements Harvester {
     repo: any
     esClient: Client;
@@ -54,21 +55,32 @@ export class common implements Harvester {
         request({
             url: this.repo.itemsEndPoint + '&limit=50&offset=' + offset,
             method: "GET",
-        }, (error, response, body) => {
+            headers: {
+                Accept: "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3"
+            }
+        }, async (error, response, body) => {
             job.progress(50);
             if (!error) {
                 if (response.statusCode == 200) {
-                    let data: Array<any> = JSON.parse(body)
-                    if (data.length == 0) {
+                    try {
+                        let json = await xml2js.parseStringPromise(body /*, options */);
+                        let data: Array<any> = json.items.item;
+
+                        if (data.length == 0) {
+                            let error = new Error('no data exist on page ' + job.data.page + ' and offset ' + offset);
+                            error.name = "NoData"
+                            done(error);
+                        }
+                        else {
+                            this.fetchQueue.add(this.fetchJobTitle, { page, pipe: job.data.pipe }, { attempts: this.attempts })
+                            this.indexQueue.add(this.indexJobTitle, { data })
+                            job.progress(100);
+                            done();
+                        }
+                    } catch (e) {
                         let error = new Error('no data exist on page ' + job.data.page + ' and offset ' + offset);
                         error.name = "NoData"
                         done(error);
-                    }
-                    else {
-                        this.fetchQueue.add(this.fetchJobTitle, { page, pipe: job.data.pipe }, { attempts: this.attempts })
-                        this.indexQueue.add(this.indexJobTitle, { data })
-                        job.progress(100);
-                        done();
                     }
                 } else {
                     let error = new Error('something wrong happened')
