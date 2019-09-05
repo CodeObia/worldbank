@@ -57,19 +57,6 @@ export const countersConfig: GeneralConfigs[] = [
       `,
     } as ComponentCounterConfigs,
     tour: true,
-  },
-  {
-    show: true,
-    componentConfigs: {
-      id: 'regionscounts',
-      title: 'Regions',
-      source: 'region.keyword',
-      description: `
-        Total number of Regions involved with the information
-        product found
-      `,
-    } as ComponentCounterConfigs,
-    tour: true,
   }
   ,
   {
@@ -88,12 +75,39 @@ export const countersConfig: GeneralConfigs[] = [
   {
     show: true,
     componentConfigs: {
+      id: 'regionscounts',
+      title: 'Regions',
+      source: 'region.keyword',
+      description: `
+        Total number of Regions involved with the information
+        product found
+      `,
+    } as ComponentCounterConfigs,
+    tour: true,
+  }
+  ,
+  {
+    show: true,
+    componentConfigs: {
+      id: 'sponsorcounts',
+      title: 'Funders',
+      source: 'sponsorship.keyword',
+      description: `
+      Total number of Funders involved with the information
+      product found
+      `,
+    } as ComponentCounterConfigs,
+    tour: true,
+  },
+  {
+    show: true,
+    componentConfigs: {
       id: 'languages',
       title: 'Languages',
       source: 'language.keyword',
       description: `
-        Total number of information products only accessible
-        as by publisher's specifications.
+      Total number of Languages involved with the information
+      product found
       `,
     } as ComponentCounterConfigs,
     tour: true,
