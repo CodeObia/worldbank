@@ -156,6 +156,43 @@ export const dashboardConfig: GeneralConfigs[] = [
     tour: true
   },
   {
+    class: 'col-md-6 mt-3 no-side-padding',
+    show: true,
+    component: 'ListComponent',
+    componentConfigs: {
+      id: 'topTopics',
+      title: 'Top Topics',
+      source: 'topic',
+      description: `
+          The top twenty Topics by number of information products.
+          Click on ICONS:expand_less to collapse the list.
+      `
+    } as ComponentDashboardConfigs,
+    scroll: {
+      icon: 'list_alt'
+    },
+    tour: true
+  },
+  {
+    class: 'col-md-6 mt-3 no-side-padding',
+    show: true,
+    component: 'ListComponent',
+    componentConfigs: {
+      id: 'publishers',
+      title: 'Top Publishers',
+      source: 'publisher',
+      description: `
+          All Publishers tagged across all information products are represented here and
+          orderd by quantity of tags for each funder. Scroll down to see more results.
+          Click on ICONS:expand_less to collapse the list.
+      `
+    } as ComponentDashboardConfigs,
+    scroll: {
+      linkedWith: 'topTopics'
+    },
+    tour: true
+  },
+  {
     class: 'col-md-12 mt-3 no-side-padding',
     show: true,
     component: 'ListComponent',
