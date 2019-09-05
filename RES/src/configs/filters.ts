@@ -61,7 +61,7 @@ export const filtersConfig: GeneralConfigs[] = [
     componentConfigs: {
       placeholder: 'Select region(s)',
       source: 'region.keyword',
-      addInMainQuery: false,
+      addInMainQuery: true,
     } as ComponentFilterConfigs,
   },
   {
@@ -97,6 +97,15 @@ export const filtersConfig: GeneralConfigs[] = [
     componentConfigs: {
       placeholder: 'select Funder(s)',
       source: 'sponsorship.keyword',
+      addInMainQuery: true,
+    } as ComponentFilterConfigs,
+  },
+  {
+    show: true,
+    component: 'SelectComponent',
+    componentConfigs: {
+      placeholder: 'select Topic(s)',
+      source: 'topic.keyword',
       addInMainQuery: true,
     } as ComponentFilterConfigs,
   },
