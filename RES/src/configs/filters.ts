@@ -99,8 +99,7 @@ export const filtersConfig: GeneralConfigs[] = [
       source: 'sponsorship.keyword',
       addInMainQuery: true,
     } as ComponentFilterConfigs,
-  }
-  ,
+  },
   {
     show: true,
     component: 'SelectComponent',
@@ -109,8 +108,7 @@ export const filtersConfig: GeneralConfigs[] = [
       source: 'doctype.keyword',
       addInMainQuery: false,
     } as ComponentFilterConfigs,
-  }
-  ,
+  },
   {
     show: true,
     component: 'SelectComponent',
@@ -119,8 +117,7 @@ export const filtersConfig: GeneralConfigs[] = [
       source: 'rights.keyword',
       addInMainQuery: false,
     } as ComponentFilterConfigs,
-  }
-  ,
+  },
   {
     show: true,
     component: 'SelectComponent',
@@ -129,10 +126,7 @@ export const filtersConfig: GeneralConfigs[] = [
       source: 'unit.keyword',
       addInMainQuery: false,
     } as ComponentFilterConfigs,
-  }
-
-  
-  ,
+  },
   {
     show: true,
     component: 'SelectComponent',
@@ -141,8 +135,7 @@ export const filtersConfig: GeneralConfigs[] = [
       source: 'imported.keyword',
       addInMainQuery: false,
     } as ComponentFilterConfigs,
-  }
-  ,
+  },
   {
     show: true,
     component: 'SelectComponent',
@@ -151,8 +144,7 @@ export const filtersConfig: GeneralConfigs[] = [
       source: 'googlescholar.keyword',
       addInMainQuery: false,
     } as ComponentFilterConfigs,
-  }
-  ,
+  },
   {
     show: true,
     component: 'SelectComponent',
@@ -161,9 +153,7 @@ export const filtersConfig: GeneralConfigs[] = [
       source: 'globalpractice.keyword',
       addInMainQuery: false,
     } as ComponentFilterConfigs,
-  }
-  
-  ,
+  },
   {
     show: true,
     component: 'SelectComponent',
@@ -172,9 +162,7 @@ export const filtersConfig: GeneralConfigs[] = [
       source: 'doctype.keyword',
       addInMainQuery: false,
     } as ComponentFilterConfigs,
-  }
-  
-  ,
+  },
   {
     show: true,
     component: 'SelectComponent',
@@ -184,7 +172,6 @@ export const filtersConfig: GeneralConfigs[] = [
       addInMainQuery: true,
     } as ComponentFilterConfigs,
   },
-  ,
   {
     show: true,
     component: 'SelectComponent',
@@ -218,5 +205,5 @@ export const filtersConfig: GeneralConfigs[] = [
       source: 'community.keyword',
       addInMainQuery: false,
     } as ComponentFilterConfigs,
-  },
+  }
 ];
