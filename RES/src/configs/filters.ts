@@ -95,16 +95,101 @@ export const filtersConfig: GeneralConfigs[] = [
     show: true,
     component: 'SelectComponent',
     componentConfigs: {
-      placeholder: 'select Funder(s)',
+      placeholder: 'Select Funder(s)',
       source: 'sponsorship.keyword',
       addInMainQuery: true,
     } as ComponentFilterConfigs,
-  },
+  }
+  ,
   {
     show: true,
     component: 'SelectComponent',
     componentConfigs: {
-      placeholder: 'select Topic(s)',
+      placeholder: 'select Socument type(s)',
+      source: 'doctype.keyword',
+      addInMainQuery: false,
+    } as ComponentFilterConfigs,
+  }
+  ,
+  {
+    show: true,
+    component: 'SelectComponent',
+    componentConfigs: {
+      placeholder: 'Select Rights type(s)',
+      source: 'rights.keyword',
+      addInMainQuery: false,
+    } as ComponentFilterConfigs,
+  }
+  ,
+  {
+    show: true,
+    component: 'SelectComponent',
+    componentConfigs: {
+      placeholder: 'Select Unit(s)',
+      source: 'unit.keyword',
+      addInMainQuery: false,
+    } as ComponentFilterConfigs,
+  }
+
+  
+  ,
+  {
+    show: true,
+    component: 'SelectComponent',
+    componentConfigs: {
+      placeholder: 'Select Imported status',
+      source: 'imported.keyword',
+      addInMainQuery: false,
+    } as ComponentFilterConfigs,
+  }
+  ,
+  {
+    show: true,
+    component: 'SelectComponent',
+    componentConfigs: {
+      placeholder: 'Google Scholar status',
+      source: 'googlescholar.keyword',
+      addInMainQuery: false,
+    } as ComponentFilterConfigs,
+  }
+  ,
+  {
+    show: true,
+    component: 'SelectComponent',
+    componentConfigs: {
+      placeholder: 'Select Global Practice(s)',
+      source: 'globalpractice.keyword',
+      addInMainQuery: false,
+    } as ComponentFilterConfigs,
+  }
+  
+  ,
+  {
+    show: true,
+    component: 'SelectComponent',
+    componentConfigs: {
+      placeholder: 'Select Document type(s)',
+      source: 'doctype.keyword',
+      addInMainQuery: false,
+    } as ComponentFilterConfigs,
+  }
+  
+  ,
+  {
+    show: true,
+    component: 'SelectComponent',
+    componentConfigs: {
+      placeholder: 'Select Publisher(s)',
+      source: 'publisher.keyword',
+      addInMainQuery: true,
+    } as ComponentFilterConfigs,
+  },
+  ,
+  {
+    show: true,
+    component: 'SelectComponent',
+    componentConfigs: {
+      placeholder: 'Select Topic(s)',
       source: 'topic.keyword',
       addInMainQuery: true,
     } as ComponentFilterConfigs,
