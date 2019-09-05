@@ -63,7 +63,9 @@ export class common implements Harvester {
             if (!error) {
                 if (response.statusCode == 200) {
                     try {
-                        let json = await xml2js.parseStringPromise(body /*, options */);
+                        let json = await xml2js.parseStringPromise(body,{
+                            explicitArray:false,
+                        });
                         let data: Array<any> = json.items.item;
 
                         if (data.length == 0) {
