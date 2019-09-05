@@ -68,15 +68,6 @@ export const filtersConfig: GeneralConfigs[] = [
     show: true,
     component: 'SelectComponent',
     componentConfigs: {
-      placeholder: 'Select country(ies)',
-      source: 'country.keyword',
-      addInMainQuery: true,
-    } as ComponentFilterConfigs,
-  },
-  {
-    show: true,
-    component: 'SelectComponent',
-    componentConfigs: {
       placeholder: 'Select subject(s)',
       source: 'subject.keyword',
       addInMainQuery: true,
@@ -95,43 +86,8 @@ export const filtersConfig: GeneralConfigs[] = [
     show: true,
     component: 'SelectComponent',
     componentConfigs: {
-      placeholder: 'Select Status',
-      source: 'status.keyword',
-      addInMainQuery: true,
-    } as ComponentFilterConfigs,
-  },
-  {
-    show: true,
-    component: 'SelectComponent',
-    componentConfigs: {
       placeholder: 'Select type(s)',
       source: 'type.keyword',
-      addInMainQuery: true,
-    } as ComponentFilterConfigs,
-  },
-  {
-    show: true,
-    component: 'LabelComponent',
-    componentConfigs: {
-      text: 'Affiliation and Donors',
-      border: true,
-    } as ComponentLabelConfigs,
-  },
-  {
-    show: true,
-    component: 'SelectComponent',
-    componentConfigs: {
-      placeholder: 'Select CRP(s) and Platforms',
-      source: 'crp.keyword',
-      addInMainQuery: true,
-    } as ComponentFilterConfigs,
-  },
-  {
-    show: true,
-    component: 'SelectComponent',
-    componentConfigs: {
-      placeholder: 'Select author(s) affiliation(s)',
-      source: 'affiliation.keyword',
       addInMainQuery: true,
     } as ComponentFilterConfigs,
   },
@@ -158,16 +114,6 @@ export const filtersConfig: GeneralConfigs[] = [
         and collections.
       `,
     } as ComponentLabelConfigs,
-  },
-  {
-    show: true,
-    component: 'SelectComponent',
-    componentConfigs: {
-      expandPosition: 'top',
-      placeholder: 'Select repository(ies)',
-      source: 'repo.keyword',
-      addInMainQuery: false,
-    } as ComponentFilterConfigs,
   },
   {
     show: true,
